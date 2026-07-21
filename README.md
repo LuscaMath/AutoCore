@@ -1,35 +1,25 @@
-AutoCore
+# AutoCore
 
-Sistema de gerenciamento para oficinas mecânicas desenvolvido com Laravel.
+Sistema de gerenciamento para oficinas mecânicas desenvolvido com **Laravel**.
 
-Tecnologias
+## 🛠️ Tecnologias
 
-Laravel
+- **Backend:** Laravel
+- **Frontend:** Blade, Tailwind CSS
+- **Build Tool:** Vite
+- **Banco de Dados:** MySQL
 
-Blade
+## 🏗️ Arquitetura
 
-Tailwind
+O fluxo de dados da aplicação segue a seguinte ordem:
 
-MySQL
-
-Vite
-
-Arquitetura
-
-Controller
-
-↓
-
-Request
-
-↓
-
-Service
-
-↓
-
-Model
-
-↓
-
-Database
+```text
+Controller 
+   ↓ 
+Request (Validação) 
+   ↓ 
+Service (Regra de Negócio) 
+   ↓ 
+Model (Dados) 
+   ↓ 
+Database   
